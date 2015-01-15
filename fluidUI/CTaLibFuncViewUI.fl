@@ -1,0 +1,56 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+class CTaLibFuncViewUI {open
+} {
+  Function {CTaLibFuncViewUI()} {open
+  } {
+    Fl_Window m_window {
+      label {Technical Analysis Function Browser} open
+      xywh {715 264 780 385} type Double resizable visible
+    } {
+      Fl_Group m_taLibView {open
+        xywh {-35 0 815 470} box DOWN_BOX resizable
+      } {
+        Fl_Tile {} {open
+          xywh {5 5 770 340} box FLAT_BOX color 95
+        } {
+          Fl_Tree m_funcTree {
+            xywh {5 5 260 340} color 20
+            code0 {m_funcTree->root()->label("FUNCTIONS");}
+            code1 {m_funcTree->root()->labelcolor(FL_RED);}
+          }
+          Fl_Group m_funcInfo {open
+            xywh {265 5 510 340} box DOWN_BOX color 43 align 65
+          } {
+            Fl_Box {} {
+              label {Function Information}
+              xywh {270 10 500 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 64
+            }
+            Fl_Tabs {} {open
+              xywh {270 40 500 300}
+            } {
+              Fl_Group {} {
+                label SUMMARY open selected
+                xywh {270 60 500 280}
+              } {}
+              Fl_Table m_inputsTable {
+                label INPUTS open
+                xywh {270 60 500 280} box THIN_UP_FRAME hide
+              } {}
+              Fl_Table m_optInputsTable {
+                label {OPT-INPUTS} open
+                xywh {270 60 500 280} box THIN_UP_FRAME hide
+              } {}
+              Fl_Table m_outputsTable {
+                label OUTPUTS open
+                xywh {270 60 500 280} box THIN_UP_FRAME hide
+              } {}
+            }
+          }
+        }
+      }
+    }
+  }
+} 

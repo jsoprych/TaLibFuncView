@@ -1,0 +1,13 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+class CTaLibFuncViewUI {open
+} {
+  Function {CTaLibViewUI()} {open
+  } {
+    Fl_Window m_window {open selected
+      xywh {49 396 100 100} type Double visible
+    } {}
+  }
+} 

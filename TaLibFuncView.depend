@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1421286414 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/main.cpp
+	"../include/CTaLibViewWnd.h"
+
+1421269951 /DATA/2t/alpha/repo/cpp/TaLibFuncView/main.h
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<FL/Fl_Input.H>
+	<FL/Fl_Button.H>
+	<FL/Fl_Return_Button.H>
+
+1421291809 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.cxx
+	"CTaLibFuncViewUI.h"
+
+1421291809 /DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.h
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<FL/Fl_Group.H>
+	<FL/Fl_Tile.H>
+	<FL/Fl_Tree.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Tabs.H>
+	<FL/Fl_Table.H>
+
+1421286014 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/src/CTaLibViewWnd.cpp
+	"CTaLibViewWnd.h"
+
+1421286014 /DATA/2t/alpha/repo/cpp/TaLibFuncView/include/CTaLibViewWnd.h
+	"../fluidUI/CTaLibFuncViewUI.h"
+
