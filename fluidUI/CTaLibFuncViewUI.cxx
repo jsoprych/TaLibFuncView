@@ -19,16 +19,22 @@ CTaLibFuncViewUI::CTaLibFuncViewUI() {
           m_funcInfo->box(FL_DOWN_BOX);
           m_funcInfo->color((Fl_Color)43);
           m_funcInfo->align(Fl_Align(65));
-          { Fl_Box* o = new Fl_Box(270, 10, 500, 25, "Function Information");
-            o->labeltype(FL_SHADOW_LABEL);
-            o->labelsize(20);
-            o->labelcolor(FL_BACKGROUND2_COLOR);
-            o->align(Fl_Align(FL_ALIGN_CLIP));
-          } // Fl_Box* o
-          { Fl_Tabs* o = new Fl_Tabs(270, 40, 500, 300);
-            { Fl_Group* o = new Fl_Group(270, 60, 500, 280, "SUMMARY");
-              o->end();
-            } // Fl_Group* o
+          { m_funcName = new Fl_Box(270, 10, 500, 25, "<-- Select a Function");
+            m_funcName->labeltype(FL_SHADOW_LABEL);
+            m_funcName->labelsize(20);
+            m_funcName->labelcolor(FL_BACKGROUND2_COLOR);
+            m_funcName->align(Fl_Align(FL_ALIGN_CLIP));
+          } // Fl_Box* m_funcName
+          { Fl_Tabs* o = new Fl_Tabs(270, 40, 505, 300);
+            { m_summaryGroup = new Fl_Group(270, 60, 505, 280, "SUMMARY");
+              { m_funcDescription = new Fl_Box(275, 70, 495, 25, "Function Description");
+                m_funcDescription->labeltype(FL_SHADOW_LABEL);
+                m_funcDescription->labelsize(20);
+                m_funcDescription->labelcolor(FL_BACKGROUND2_COLOR);
+                m_funcDescription->align(Fl_Align(FL_ALIGN_CLIP));
+              } // Fl_Box* m_funcDescription
+              m_summaryGroup->end();
+            } // Fl_Group* m_summaryGroup
             { m_inputsTable = new Fl_Table(270, 60, 500, 280, "INPUTS");
               m_inputsTable->box(FL_THIN_UP_FRAME);
               m_inputsTable->hide();

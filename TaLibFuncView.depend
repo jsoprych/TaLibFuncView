@@ -9,10 +9,10 @@
 	<FL/Fl_Button.H>
 	<FL/Fl_Return_Button.H>
 
-1421291809 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.cxx
+1422578674 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.cxx
 	"CTaLibFuncViewUI.h"
 
-1421291809 /DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.h
+1422578674 /DATA/2t/alpha/repo/cpp/TaLibFuncView/fluidUI/CTaLibFuncViewUI.h
 	<FL/Fl.H>
 	<FL/Fl_Double_Window.H>
 	<FL/Fl_Group.H>
@@ -22,9 +22,21 @@
 	<FL/Fl_Tabs.H>
 	<FL/Fl_Table.H>
 
-1421286014 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/src/CTaLibViewWnd.cpp
+1422575790 source:/DATA/2t/alpha/repo/cpp/TaLibFuncView/src/CTaLibViewWnd.cpp
 	"CTaLibViewWnd.h"
 
-1421286014 /DATA/2t/alpha/repo/cpp/TaLibFuncView/include/CTaLibViewWnd.h
+1422578768 /DATA/2t/alpha/repo/cpp/TaLibFuncView/include/CTaLibViewWnd.h
 	"../fluidUI/CTaLibFuncViewUI.h"
+	"TaMetaData.h"
+	<stdio.h>
+
+1422577345 /DATA/2t/alpha/repo/cpp/TaLibFuncView/include/TaMetaData.h
+	"util.h"
+	<ta-lib/ta_abstract.h>
+
+1422569277 /DATA/2t/alpha/repo/cpp/TaLibFuncView/include/util.h
+	<iostream>
+	<sstream>
+	<string>
+	<vector>
 

@@ -8,7 +8,7 @@ class CTaLibFuncViewUI {open
   } {
     Fl_Window m_window {
       label {Technical Analysis Function Browser} open
-      xywh {715 264 780 385} type Double resizable visible
+      xywh {977 334 780 385} type Double resizable visible
     } {
       Fl_Group m_taLibView {open
         xywh {-35 0 815 470} box DOWN_BOX resizable
@@ -24,17 +24,22 @@ class CTaLibFuncViewUI {open
           Fl_Group m_funcInfo {open
             xywh {265 5 510 340} box DOWN_BOX color 43 align 65
           } {
-            Fl_Box {} {
-              label {Function Information}
+            Fl_Box m_funcName {
+              label {<-- Select a Function} selected
               xywh {270 10 500 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 64
             }
             Fl_Tabs {} {open
-              xywh {270 40 500 300}
+              xywh {270 40 505 300}
             } {
-              Fl_Group {} {
-                label SUMMARY open selected
-                xywh {270 60 500 280}
-              } {}
+              Fl_Group m_summaryGroup {
+                label SUMMARY open
+                xywh {270 60 505 280}
+              } {
+                Fl_Box m_funcDescription {
+                  label {Function Description}
+                  xywh {275 70 495 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 64
+                }
+              }
               Fl_Table m_inputsTable {
                 label INPUTS open
                 xywh {270 60 500 280} box THIN_UP_FRAME hide

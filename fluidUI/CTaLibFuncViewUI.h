@@ -18,6 +18,9 @@ public:
   Fl_Group *m_taLibView;
   Fl_Tree *m_funcTree;
   Fl_Group *m_funcInfo;
+  Fl_Box *m_funcName;
+  Fl_Group *m_summaryGroup;
+  Fl_Box *m_funcDescription;
   Fl_Table *m_inputsTable;
   Fl_Table *m_optInputsTable;
   Fl_Table *m_outputsTable;

@@ -29,15 +29,19 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-std=c++11" />
 			<Add option="`fltk-config --cxxflags`" />
 		</Compiler>
 		<Linker>
 			<Add option="`fltk-config --ldstaticflags`" />
+			<Add library="/usr/local/lib/libta_lib.a" />
 		</Linker>
 		<Unit filename="fluidUI/CTaLibFuncViewUI.cxx" />
 		<Unit filename="fluidUI/CTaLibFuncViewUI.fl" />
 		<Unit filename="fluidUI/CTaLibFuncViewUI.h" />
 		<Unit filename="include/CTaLibViewWnd.h" />
+		<Unit filename="include/TaMetaData.h" />
+		<Unit filename="include/util.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CTaLibViewWnd.cpp" />
 		<Extensions>
