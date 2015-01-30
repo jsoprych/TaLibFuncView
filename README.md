@@ -1,4 +1,4 @@
-# TaLibFuncView
+# TaLibFuncView (WARNING: Early stage Proof of Concept. Fluid API/Interface.)
 
 ![initial screen shot](https://github.com/jsoprych/TaLibFuncView/blob/master/doc/img/screenshot-20150129.png)
 
@@ -16,3 +16,7 @@ This project depends on FLTK and TA-Lib. More information on those dependencies 
 FLTK: http://www.fltk.org/
 
 TA-LIB: http://sourceforge.net/projects/ta-lib/
+
+Initial development on Linux (Ubuntu 14.04) using CodeBlocks IDE, but code should work on Windows and Mac with minor modifications. 
+
+This project will probably also utilize SQLite (app meta data/configuration) and perhaps Redis (financial prices) in a later stage.
