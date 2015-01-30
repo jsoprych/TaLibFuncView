@@ -64,10 +64,17 @@ class CTaLibViewWnd: public CTaLibFuncViewUI
            cout << "HINT:" << fm.hint << endl;
            wnd->m_funcName->label(fm.name);
            wnd->m_funcDescription->label(fm.hint);
+
+           //fm.group
+           //fm.nbInput
+           //fm.nbOptInput
+           //fm.nbOutput
+
            wnd->m_funcInfo->activate();
          }
          else{
           wnd->m_funcName->label("<-- Select a Function");
+          wnd->m_funcDescription->label("");
           wnd->m_funcInfo->deactivate();
          }
          break;
