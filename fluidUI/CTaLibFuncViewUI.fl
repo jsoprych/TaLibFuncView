@@ -8,36 +8,74 @@ class CTaLibFuncViewUI {open
   } {
     Fl_Window m_window {
       label {Technical Analysis Function Browser} open
-      xywh {977 334 780 385} type Double resizable visible
+      xywh {871 275 780 385} type Double resizable visible
     } {
       Fl_Group m_taLibView {open
         xywh {-35 0 815 470} box DOWN_BOX resizable
       } {
         Fl_Tile {} {open
-          xywh {5 5 770 340} box FLAT_BOX color 95
+          xywh {5 5 770 345} box FLAT_BOX color 95
         } {
           Fl_Tree m_funcTree {
-            xywh {5 5 260 340} color 20
+            xywh {5 5 260 345} color 20
             code0 {m_funcTree->root()->label("FUNCTIONS");}
             code1 {m_funcTree->root()->labelcolor(FL_RED);}
           }
           Fl_Group m_funcInfo {open
-            xywh {265 5 510 340} box DOWN_BOX color 43 align 65
+            xywh {265 5 510 345} box DOWN_BOX color 43 align 65
           } {
             Fl_Box m_funcName {
-              label {<-- Select a Function} selected
+              label {<-- Select a Function}
               xywh {270 10 500 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 64
             }
             Fl_Tabs {} {open
-              xywh {270 40 505 300}
+              xywh {270 40 505 310}
             } {
               Fl_Group m_summaryGroup {
                 label SUMMARY open
-                xywh {270 60 505 280}
+                xywh {270 60 505 290}
               } {
                 Fl_Box m_funcDescription {
-                  label {Function Description}
-                  xywh {275 70 495 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 64
+                  xywh {385 68 365 55} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 213
+                }
+                Fl_Box m_funcGroup {
+                  xywh {386 125 380 25} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 84
+                }
+                Fl_Box m_funcInputs {
+                  xywh {387 157 365 30} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 84
+                }
+                Fl_Box m_funcOptInputs {
+                  xywh {387 195 360 30} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 84
+                }
+                Fl_Box m_funcOutputs {
+                  xywh {387 235 325 30} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 84
+                }
+                Fl_Box m_funcDisplayTypes {selected
+                  xywh {386 278 384 69} labeltype SHADOW_LABEL labelsize 20 labelcolor 7 align 85
+                }
+                Fl_Box {} {
+                  label { DESCRIPTION:}
+                  xywh {275 70 105 25} align 24
+                }
+                Fl_Box {} {
+                  label {         INPUTS:}
+                  xywh {275 164 105 25} align 24
+                }
+                Fl_Box {} {
+                  label {         GROUP:}
+                  xywh {279 128 105 25}
+                }
+                Fl_Box {} {
+                  label {         OPT-INPUTS:}
+                  xywh {275 200 105 25} align 24
+                }
+                Fl_Box {} {
+                  label {         OUTPUTS:}
+                  xywh {275 239 105 25} align 24
+                }
+                Fl_Box {} {
+                  label {         VISUAL TYPE:}
+                  xywh {275 280 105 25} align 24
                 }
               }
               Fl_Table m_inputsTable {

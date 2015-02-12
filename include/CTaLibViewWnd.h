@@ -44,6 +44,25 @@ class CTaLibViewWnd: public CTaLibFuncViewUI
 
   private:
 
+    void updateSummaryTab(const FuncMeta& fm){
+      cout << "HINT:" << fm.hint << endl;
+      m_funcName->label(fm.name);
+      m_funcDescription->label(fm.hint);
+      m_funcGroup->label(fm.group);
+
+      static string msg[3];
+      msg[0] = to_string(fm.nbInput);
+      m_funcInputs->label(msg[0].c_str());
+
+      msg[1] = to_string(fm.nbOptInput);
+      m_funcOptInputs->label(msg[1].c_str());
+
+      msg[2] = to_string(fm.nbOutput);
+      m_funcOutputs->label(msg[2].c_str());
+
+      //fm.flags
+    }
+
     static void Tree_CB(Fl_Widget *w, void *data) {
 
       CTaLibViewWnd *wnd = (CTaLibViewWnd*)data;
@@ -61,9 +80,7 @@ class CTaLibViewWnd: public CTaLibFuncViewUI
 
          if(v>0){ // IFWE HAVE A VALID ID
            const FuncMeta& fm = wnd->_TaMD[(v-1)];
-           cout << "HINT:" << fm.hint << endl;
-           wnd->m_funcName->label(fm.name);
-           wnd->m_funcDescription->label(fm.hint);
+           wnd->updateSummaryTab(fm);
 
            //fm.group
            //fm.nbInput

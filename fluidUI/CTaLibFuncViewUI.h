@@ -21,6 +21,11 @@ public:
   Fl_Box *m_funcName;
   Fl_Group *m_summaryGroup;
   Fl_Box *m_funcDescription;
+  Fl_Box *m_funcGroup;
+  Fl_Box *m_funcInputs;
+  Fl_Box *m_funcOptInputs;
+  Fl_Box *m_funcOutputs;
+  Fl_Box *m_funcDisplayTypes;
   Fl_Table *m_inputsTable;
   Fl_Table *m_optInputsTable;
   Fl_Table *m_outputsTable;
