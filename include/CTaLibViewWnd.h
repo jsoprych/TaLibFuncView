@@ -60,7 +60,6 @@ class CTaLibViewWnd: public CTaLibFuncViewUI
       msg[2] = to_string(fm.nbOutput);
       m_funcOutputs->label(msg[2].c_str());
 
-      //fm.flags
     }
 
     static void Tree_CB(Fl_Widget *w, void *data) {
