@@ -1,6 +1,6 @@
 # TaLibFuncView (WARNING: Early stage Proof of Concept. Fluid API/Interface.)
 
-![initial screen shot](https://github.com/jsoprych/TaLibFuncView/blob/master/doc/img/screenshot-20150129.png)
+![initial screen shot](https://github.com/jsoprych/TaLibFuncView/blob/master/doc/img/screenshot-dialog.png)
 
 ## What's so Funny about Peace, Love, and simple, statically linked, C++ cross-platform GUI's (where they still make sense -- like in financial trading applications )???
 
